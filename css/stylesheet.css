@@ -176,7 +176,7 @@ header {
 #headerInner,
 #footerInner,
 #pageContentInner {
-    width: 1024px;
+    width: 1440px;
     display: flex;
 }
 
@@ -251,7 +251,6 @@ li {
     align-self: flex-start;
     padding-top: 64px;
     display: flex;
-    width: 1024px;
     align-items: flex-start;
 }
 
@@ -321,16 +320,16 @@ li {
     flex-wrap: wrap;
 }
 
-.cardWrapper.skillCardWrapper {
+.skillCardWrapper {
     gap: 16px;
 }
 
-.cardWrapper.projectCardWrapper {
+.projectCardWrapper {
     flex-direction: column;
     gap: 64px;
 }
 
-.cardWrapper.projectCardWrapper img {
+.projectCardWrapper img {
     width: 100%;
     height: 100%;
     border-radius: 16px;
@@ -355,6 +354,23 @@ li {
 .fancyLi img {
     height: 44px;
     width: 44px;
+}
+
+@media (min-width: 64.01em) {
+    .projectCard {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .projectCardImg {
+        width: 50%;
+        order: 2;
+    }
+
+    .projectCardText {
+        width: 50%;
+        order: 1;
+    }
 }
 
 @media (max-width: 64em) {
