@@ -334,9 +334,15 @@ li {
     height: 100%;
     border-radius: 16px;
     aspect-ratio: 4 / 3;
-    object-fit: cover;
-    object-position: 50% 0%;
-    box-shadow: 4px 4px 4px #666;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+.projectCardImg {
+    background-color: #DDD;
+    border-radius: 16px;
+    padding: 16px;
 }
 
 .fancyLiWrapper {
